@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --text-color: #333333;
+    --link-color: #999999;
+    --primary: #017cc2;
+    --width-s: 321px;
+    --width-m: 712px;
+    --width-l: 1662px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 1.2;
+}
+
+p, a {
+    font-weight: 500;
+    text-decoration: none!important;
+}
+
+h1, h2, h3 {
+    font-weight: 700!important;
+}
+  
+button {
+    font-weight: 700;
+}
+
+
+.header__tagline {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.header__info .header__tel {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: var(--text-color);
+}
+
+.header__info .header__tel a{
+    color: var(--text-color);
+}
+
+.header__info  .header__tel a:hover {
+    color: var(--primary);
+}
+
+.header__ctas {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.header__social {
+    display: flex;
+    gap: 8px;
+}
+
+.header__social * {
+    width: 27px;
+}
+
+.header__cta {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400!important;
+    border: 1px solid #c68a8a;
+    padding: 20px auto;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(191,138,138,1) 0%, rgba(159,0,0,1) 60%, rgba(149,101,101,1) 100%);
+}
+
+.header__bottom {
+    background-color: var(--text-color);
+    padding: 20px 0px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+  
+.custom-toggler.navbar-toggler {
+    border-color: #ffffff00;
+}
+
+.hero {
+    height: 400px;
+    background-image: url(/assets/Hero\ Background-Mobile.jpg);
+    background-size: cover;
+    padding: 30px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.hero__heading {
+    font-size: 44px;
+}
+
+.hero__paragraph {
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.hero__cta {
+    width: auto;
+    padding: 17px 27px!important;
+    margin: 20px 0px;
+}
+
+.featured {
+    background-color: #eeeeee;
+}
+
+.featured a {
+    color: var(--link-color);
+}
+
+.featured a:hover {
+    color: var(--primary);
+}
+
+.featured__main {
+    background-color: #fff;
+}
+
+.featured__cta {
+    width: auto;
+    padding: 17px 27px!important;
+}
+
+.featured__links {
+    list-style-type: none;
+    padding: 0px 0px 40px 0px;
+}
+
+.featured__link {
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+.featured__car *:not(:last-child){
+    margin:  0px 0px 15px 0px;
+}
+
+.promotion {
+    background-color: #333333;
+}
+
+.footer__link {
+    color: var(--text-color);
+    padding: 0px 5px;
+}
+
+.footer__link:a {
+    color: var(--primary);
+}
+
+.footer__bottom {
+    color: var(--primary);
+}
+
+.footer__bottom .footer__link:not(:last-child):after {
+    content: "|";
+    padding: 0 0px 0 10px;
+}
+
+.footer__bottom .footer__link {
+    color: #fff;
+}
+
+.footer__bottom .footer__link:hover {
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+
+    .header__info .header__tel {
+        font-weight: 700;
+    }
+
+    .header__tel a {
+        font-weight: 700!important;
+    }
+
+    .hero {
+        height: 378px;
+        background-image: url(/assets/Hero\ Background-Tablet.jpg);
+        background-size: cover;
+        padding: 30px 0px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    h1 {
+        font-size: 60px!important;
+    }
+
+    .footer__link:last-of-type {
+        margin-right: 20px;
+    }
+}
+    
+@media (min-width: 1920px) {
+
+    .header__tagline {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--text-color);
+    }
+    
+    .header__info .header__tel {
+        font-size: 32px;
+        margin-bottom: 0px;
+        color: var(--text-color);
+    }
+
+    .header__cta {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 90px!important;
+        font-weight: 600!important;
+    }
+
+    .hero__paragraph {
+        font-size: 24px;
+    }
+
+    .hero {
+        height: 520px;
+        background-image: url(/assets/Hero\ Background-Desktop.jpg);
+        background-size: cover;
+        padding: 30px 0px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .hero__image {
+        width: 757px;
+    }
+}

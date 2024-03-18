@@ -1,0 +1,40 @@
+//custom style
+
+//buttons
+$grid-gutter-width: 0px;
+$input-btn-padding-y: 20px;
+$input-btn-padding-x: 20px;
+
+//colors
+$body-color:  #333333;
+$secondary:  #333333;
+$primary: #017cc2;
+
+
+//fonts
+$font-size-base: 1.125rem;
+$btn-font-weight: 700;
+$h1-font-size: 44px;
+$h2-font-size: 30px;
+$h3-font-size: 18px;
+
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1920px
+);
+
+//content width
+$container-max-widths: (
+  sm: 321px,
+  md: 712px,
+  xxl: 1662px
+) !default;
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
