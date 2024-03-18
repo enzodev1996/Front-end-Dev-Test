@@ -208,6 +208,17 @@ button {
         margin-right: 20px;
     }
 }
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 520px;
+        background-image: url(/assets/Hero\ Background-Desktop.jpg);
+        background-size: cover;
+        padding: 30px 0px;
+        background-repeat: no-repeat;
+        background-position: 11% 0%;
+    }
+}
     
 @media (min-width: 1920px) {
 
